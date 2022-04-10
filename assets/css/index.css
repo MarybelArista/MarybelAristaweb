@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     font-family: Helvetica, sans-serif;
@@ -7,9 +7,9 @@
 body {
     background-color: #421247;
 
-}
+} */
 
-.header {
+/* .header {
     width: 100%;
     height: 100px;
     background-color: #421247;
@@ -53,8 +53,8 @@ body {
 }
 
 .linea { width: 100%; size: 100; color: #FFE600;}
-
-.main {
+ */
+/* .main {
     background-color: #421247;
     padding-top: 100px;
     padding-block-end: 100px;
@@ -88,8 +88,8 @@ body {
     color: rgb(255, 255, 255);
     font-weight: normal;
 }
-
-footer {
+ */
+/* footer {
     padding-top: 60px;
     padding-left: 200px;
     padding-right: 200px;
@@ -99,9 +99,9 @@ footer {
     color: white;
     font-size: smaller;
     background-image: linear-gradient(to right, #411241, #8377D1);
-}
+} */
 
-.redes {
+/* .redes {
     padding: 2%;
 }
 
@@ -135,7 +135,7 @@ footer {
 .fotomarybel {
     float: inline-end;
     padding: 15%;
-}
+} */
 
 .mainservicios {
     background-color: #421247;

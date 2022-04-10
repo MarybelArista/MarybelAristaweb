@@ -3,22 +3,26 @@
     height: 100px;
     background-color: #421247;
     position: relative;
-
-    .conteiner {
-        width: 50%;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .logo {
-        float: left;
-        padding-left: 75px;
-        padding-top: 10px;
-    }
-
-    .linea { width: 100%; size: 100; color: #FFE600;}
-
 }
+
+.conteiner {
+    width: 50%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    padding-left: 75px;
+    padding-top: 10px;
+}
+
+.linea {
+    width: 100%;
+    size: 100;
+    color: #FFE600;
+}
+
 
 .menu {
     float: right;
