@@ -1,0 +1,51 @@
+.mainservicios {
+    background-color: #421247;
+    color: white;
+    display: inline-block;
+    padding-left: 6%;
+}
+
+.secciondos {
+    background-color: #FFE600;
+    float: left;
+    padding: 1%;
+    color: #421247;
+}
+
+.contenidoservicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 500px;
+    grid-template-areas:
+        ". . . "
+        "branding socialmedia web"
+        ". . .";
+    text-align: center;
+    color: white;
+}
+
+.branding {
+    grid-area: branding;
+    padding: 5%;
+}
+
+.socialmedia {
+    grid-area: socialmedia;
+    padding: 5%;
+}
+
+.web {
+    grid-area: web;
+}
+
+.encabezados>th {
+    font-weight: bolder;
+    font-size: 250%;
+    text-align: center;
+}
+
+.textos>td {
+    font-weight: lighter;
+    font-size: 80%;
+    padding: 1%;
+}
