@@ -9,12 +9,17 @@
     text-align: left;
     padding-left: 100px;
     text-decoration: none;
+
+    &section>article>h1 {
+        padding: 8%;
+        color: #FFE600;
+    }
 }
 
-.main>section>article>h1 {
+/* .main>section>article>h1 {
     padding: 8%;
     color: #FFE600;
-}
+} */
 
 .boton {
     padding-left: 8%;

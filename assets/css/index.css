@@ -10,6 +10,39 @@
 body {
   background-color: #421247; }
 
+.img-1 {
+  width: 100%;
+  height: 200px;
+  background-size: cover; }
+
+.img-2 {
+  width: 100%;
+  height: 200px;
+  background-size: cover; }
+
+.img-3 {
+  width: 100%;
+  height: 200px;
+  background-size: cover; }
+
+.img-1 {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url("../../image/branding.png"); }
+
+.img-2 {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url("../../image/socialmedia.png"); }
+
+.img-3 {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url("../../image/sitioweb.png"); }
+
 @media screen and (max-width: 768px) {
   .contenidomainabout {
     display: grid;
@@ -92,11 +125,14 @@ footer {
   text-align: left;
   padding-left: 100px;
   text-decoration: none; }
+  .mainsection > article > h1 {
+    padding: 8%;
+    color: #FFE600; }
 
-.main > section > article > h1 {
-  padding: 8%;
-  color: #FFE600; }
-
+/* .main>section>article>h1 {
+    padding: 8%;
+    color: #FFE600;
+} */
 .boton {
   padding-left: 8%; }
 
