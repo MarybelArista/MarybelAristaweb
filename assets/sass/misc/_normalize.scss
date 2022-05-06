@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 /* RESET */
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Helvetica, sans-serif;
 }
 
 /* GLOBAL */
 body {
     background-color: #421247;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 @for $i from 1 through 3 {
