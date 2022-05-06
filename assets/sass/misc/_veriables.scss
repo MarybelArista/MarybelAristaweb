@@ -1,10 +1,43 @@
 @media screen and (max-width:768px) {
+    .nav_label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_menu {
+        background-color: #421247;
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav_item {
+        color: #421247;
+        text-decoration: none;
+        font-weight: bold;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+
+    .nav_imput:checked+.nav_menu {
+        clip-path: circle(100% at center)
+    }
+}
+
+@media screen and (max-width:768px) {
     .contenidomainabout {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "presentacion"
-        "fotomarybel";
+            "fotomarybel";
     }
 
 }
@@ -14,7 +47,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "branding" "socialmedia" "web";
+        grid-template-areas: "branding""socialmedia""web";
     }
 
 }

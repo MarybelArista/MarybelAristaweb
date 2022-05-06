@@ -1,23 +1,70 @@
-.header {
-    width: 100%;
-    position: relative;
-}
+/* .header {
+    background-color: #FFE600;
+    height: 80px;
+    color: azure;
+} */
 
 .nav {
     background-color: #421247;
-    height: 80px;
+    height: 100px;
     color: #FFE600;
 }
 
 .nav_conteiner {
     display: flex;
-    height: 100%;
-    width: 90%;
-    margin:0 auto;
-    justify-content: space-between;
-    align-items: center;
-
+    justify-content: space-around;
+    align-items: flex-end;
 }
+
+.nav_logo {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+ .nav_menu {
+     background-color: #FFE600;
+     display: grid;
+     grid-auto-flow: column;
+     gap: 1em;
+ }
+ 
+ .nav_item {
+     color: #FFE600;
+     text-decoration: none;
+     font-weight: bold;
+     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+ }
+
+.nav_item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+.nav_item:hover {
+    color: #fff;
+    font-weight: bolder;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.nav_label {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+}
+
+
+.nav_input:checked + .nav_menu {
+    clip-path: circle(100% at center);
+}
+
+/* .nav_label, .nav_input {
+    display: none;
+} */
+
 
 /* .conteiner {
     width: 50%;
@@ -25,11 +72,11 @@
     margin: auto;
 } */
 
-.logo {
+/* .logo {
     float: left;
     padding-left: 75px;
     padding-top: 10px;
-}
+} */
 
 .linea {
     width: 100%;

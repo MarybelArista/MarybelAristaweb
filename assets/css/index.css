@@ -7,8 +7,8 @@
   padding: 0px; }
 
 /* GLOBAL */
-body {
-  background-color: #421247;
+.body {
+  /*     background-color: #421247; */
   font-family: 'Roboto', sans-serif; }
 
 .img-1 {
@@ -45,6 +45,31 @@ body {
   background-image: url("../../image/sitioweb.png"); }
 
 @media screen and (max-width: 768px) {
+  .nav_label {
+    display: block;
+    cursor: pointer; }
+  .nav_menu {
+    background-color: #421247;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; }
+  .nav_item {
+    color: #421247;
+    text-decoration: none;
+    font-weight: bold;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+  .nav_imput:checked + .nav_menu {
+    clip-path: circle(100% at center); } }
+
+@media screen and (max-width: 768px) {
   .contenidomainabout {
     display: grid;
     grid-template-columns: 1fr;
@@ -73,33 +98,73 @@ footer {
 .redes {
   padding: 2%; }
 
-.header {
-  width: 100%;
-  position: relative; }
-
+/* .header {
+    background-color: #FFE600;
+    height: 80px;
+    color: azure;
+} */
 .nav {
   background-color: #421247;
-  height: 80px;
+  height: 100px;
   color: #FFE600; }
 
 .nav_conteiner {
   display: flex;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-around;
+  align-items: flex-end; }
 
+.nav_logo {
+  font-size: 1.5em;
+  font-weight: 900; }
+
+.nav_menu {
+  background-color: #FFE600;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em; }
+
+.nav_item {
+  color: #FFE600;
+  text-decoration: none;
+  font-weight: bold;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+
+.nav_item::after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .3s; }
+
+.nav_item:hover {
+  color: #fff;
+  font-weight: bolder;
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+.nav_label {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em; }
+
+.nav_input:checked + .nav_menu {
+  clip-path: circle(100% at center); }
+
+/* .nav_label, .nav_input {
+    display: none;
+} */
 /* .conteiner {
     width: 50%;
     max-width: 1200px;
     margin: auto;
 } */
-.logo {
-  float: left;
-  padding-left: 75px;
-  padding-top: 10px; }
-
+/* .logo {
+    float: left;
+    padding-left: 75px;
+    padding-top: 10px;
+} */
 .linea {
   width: 100%;
   size: 400;
