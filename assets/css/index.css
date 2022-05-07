@@ -45,6 +45,8 @@
   background-image: url("../../image/sitioweb.png"); }
 
 @media screen and (max-width: 768px) {
+  .nav {
+    color: #421247; }
   .nav_label {
     display: block;
     cursor: pointer; }
@@ -105,8 +107,7 @@ footer {
 } */
 .nav {
   background-color: #421247;
-  height: 100px;
-  color: #FFE600; }
+  height: 100px; }
 
 .nav_conteiner {
   display: flex;
